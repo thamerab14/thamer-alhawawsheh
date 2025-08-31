@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thamer Alhawawsha</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center/cover;
+      overflow: hidden;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+    }
+
+    .container {
+      position: relative;
+      text-align: center;
+      color: white;
+      z-index: 2;
+    }
+
+    /* الاسم */
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      cursor: pointer;
+      transition: all 0.4s ease;
+    }
+
+    h1:hover {
+      color: #00ffe7;
+      text-shadow: 0 0 15px #00ffe7, 0 0 30px #00ffe7;
+      transform: scale(1.05);
+    }
+
+    /* الأيقونات */
+    .social-icons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .social-icons a {
+      font-size: 2rem;
+      color: white;
+      transition: 0.3s;
+      position: relative;
+    }
+
+    /* تأثير اهتزاز أو نبض */
+    .social-icons a:hover {
+      transform: scale(1.3);
+    }
+
+    .social-icons a:active {
+      animation: bounce 0.4s;
+    }
+
+    @keyframes bounce {
+      0%   { transform: scale(1); }
+      30%  { transform: scale(1.4); }
+      60%  { transform: scale(0.9); }
+      100% { transform: scale(1); }
+    }
+
+    /* ألوان التطبيقات */
+    .facebook:hover { color: #1877f2; }
+    .instagram:hover { color: #e4405f; }
+    .linkedin:hover { color: #0a66c2; }
+    .gmail:hover { color: #ea4335; }
+
+    /* استجابة للشاشات الصغيرة */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .social-icons a {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <h1 id="name">Thamer Alhawawsha</h1>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/19fXeHS3C8/" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/tamerabd26?igsh=MXI4ZXRzMjkxZXF6MA==" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/thamer-alhawawsha-b8288a2b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:alhawawshat@gmail.com" class="gmail"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</body>
+</html>
